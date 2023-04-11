@@ -1,0 +1,210 @@
+* {
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+body {
+    background-color: #333;
+    color: rgb(235, 235, 235);
+    transition: all 2s;
+    background-image: url(images/bg1.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+body.switch {
+    background-color: rgb(235, 235, 235);
+    color: #333;
+    background-image: url(images/bg2.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#container {
+    position: relative;
+    width: 100%;
+    max-width: 1366px;
+    /* make sure the columns don't get too small and text stays readable */
+    min-width: 900px;
+    margin: 1em auto;
+    padding-top: 2em;
+}
+
+header {
+    margin: 2em auto 2em auto;
+}
+
+#banner {
+    position: relative;
+    display: flex;
+    width: 1100px;
+    height: 250px;
+    margin: auto;
+    background-color: rgb(235, 235, 235);
+    color: #333;
+    overflow: hidden;
+    display: grid;
+	place-items: center;
+    background-image: url(images/banner1.png);
+}
+
+#banner.switch {
+    background-color: #333;
+    color: rgb(235, 235, 235);
+    transition: all 2s;
+    background-image: url(images/banner2.png);
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1em auto;
+}
+
+main section {
+    width: 25%;
+    border: 1px rgb(235, 235, 235) solid;
+    margin: 0 1em;
+    padding: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(120, 120, 120);
+    text-align: center;
+}
+
+ol,
+ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+section li {
+    padding-left: 1.2em;
+}
+
+section a {
+    line-height: 1.1em;
+    display: inline-block;
+    padding: .5em;
+    color: rgb(255, 255, 255);
+}
+
+section a:hover {
+    background-color: rgb(255, 255, 255);
+    color: #333;
+}
+
+section.switch a {
+    color: #333;
+}
+
+section.switch a:hover {
+    background-color: #333;
+    color: rgb(255, 255, 255);
+}
+
+button {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    padding: 12px;
+    background-color: rgb(251, 251, 251);
+    color: #333;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: rgb(67, 67, 67);
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+
+button.switch {
+    background-color: rgb(235, 235, 235);
+    border-color: #333;
+}
+
+button.switch:hover {
+    background-color: #333;
+    color: rgb(235, 235, 235)
+}
+
+#tape {
+    background-image: url(images/tape.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    width: 160px;
+    height: 63px;
+    z-index: 10;
+    filter: drop-shadow(16px 16px 10px black);
+    position: absolute;
+    top: 170px;
+    left: 0px;
+    transform: rotate(140deg);
+}
+
+#tape2 {
+    background-image: url(images/tape.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    width: 160px;
+    height: 63px;
+    z-index: 10;
+    filter: drop-shadow(16px 16px 10px black);
+    position: absolute;
+    top: 170px;
+    right: 0px;
+    transform: rotate(-140deg);
+}
+
+#tape3 {
+    background-image: url(images/tape.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    width: 160px;
+    height: 63px;
+    z-index: 10;
+    filter: drop-shadow(16px 16px 10px black);
+    position: absolute;
+    top: 350px;
+    right: 0px;
+    transform: rotate(140deg);
+}
+
+#tape4 {
+    background-image: url(images/tape.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    width: 160px;
+    height: 63px;
+    z-index: 10;
+    filter: drop-shadow(16px 16px 10px black);
+    position: absolute;
+    top: 350px;
+    left: 0px;
+    transform: rotate(-140deg);
+}
+
+h4 {
+    font-size: 100px;
+    font-family: Inter;
+    position: absolute;
+}
+
+.h1H {
+   text-align: center;
+   margin: 0;
+}
+
+h1 {
+    font-size: 60px;
+}
