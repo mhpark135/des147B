@@ -1,0 +1,42 @@
+{
+    "point1":{
+       "time":"11:18",
+       "cover":1,
+       "title":"God Bless the Child, Sonny Rollins"
+    },
+    "point2":{
+       "time":"11:33",
+       "cover":2,
+       "reason":"That’s Life, Frank Sinatra"
+    },
+    "point3":{
+       "time":"11:50",
+       "cover":3,
+       "reason":" One Step Ahead Cecile McLorin Salvant"
+    },
+    "point4":{
+       "time":"12:01",
+       "cover":4,
+       "reason":"(I Love You) For Sentimental Reasons, Nat King Cole"
+    },
+    "point5":{
+       "time":"12:04",
+       "cover":5,
+       "reason":"Put Your Head On My Shoulder, Paul Anka"
+    },
+    "point6":{
+       "time":"12:07",
+       "cover":6,
+       "reason":"Take Five, Dave Brubeck"
+    },
+    "point7":{
+       "time":"12:08",
+       "cover":7,
+       "reason":"But Not For Me - Vocal Version, Chet Baker"
+    },
+    "point8":{
+       "time":"12:11",
+       "cover":8,
+       "reason":"definitely hangry"
+    }
+ }
