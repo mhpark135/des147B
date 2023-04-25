@@ -1,0 +1,97 @@
+body {
+    background-color: rgba(220, 220, 220, 0.844);
+}
+
+.table {
+    width: 700px;
+    height: 400px;
+    background-color: rgb(194, 10, 1);
+    border-radius: 20px;
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    top: 0;
+    bottom: 0;
+    margin: auto;
+  }
+
+  .screen {
+    width: 200px;
+    height: 300px;
+    background-color: rgb(21, 21, 21);
+    border-radius: 20px;
+    position: absolute;
+    left: 0; 
+    right: 400px; 
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    z-index: 2;
+  }
+
+  .screenText {
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    left: 0; 
+    right: -20px; 
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    z-index: 3;
+    color: aliceblue;
+  }
+
+  .disk1 {
+    width: 430px;
+    height: 430px;
+    border-radius: 50%;
+    background-color: rgb(32, 32, 32);
+    position: absolute;
+    /* margin: auto; */
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    left: 400px; 
+    right: 0; 
+    top: 0;
+    bottom: 0;
+  }
+
+  .diskCenter1 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    /* margin: auto; */
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    left: 170px; 
+    right: 0; 
+    top: 0;
+    bottom: 20px;
+    
+  }
+
+  .diskCenterP1 {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(64, 64, 64);
+    position: absolute;
+    /* margin: auto; */
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    left: 35px; 
+    right: 0; 
+    top: 0;
+    bottom: 0px;
+    
+  }
