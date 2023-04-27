@@ -6,6 +6,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    font-family: Inter;
 }
 
 img {
@@ -13,12 +14,29 @@ img {
     margin: auto;
 }
 
-h1 {
+h1, h2 {
     text-align: center;
+    font-weight: bold;
+    font-family: Inter;
+}
+
+h3 {
+    color: #949494;
+    text-align: center;
+    font-family: Inter;
 }
 
 p {
     margin-left: 30vw;
     margin-right: 30vw;
     text-align: left;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    color: rgb(204, 204, 204);
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
