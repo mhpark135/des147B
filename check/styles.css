@@ -190,7 +190,7 @@ h1, h2, h3 {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-color:none;
+    background-color: rgba(255, 255, 255, 0);
     position: absolute;
     /* margin: auto; */
     margin-top: auto;
@@ -242,8 +242,8 @@ h1, h2, h3 {
     margin-bottom: auto;
     margin-right: auto;
     left: 0; 
-    right: 100; 
-    top: 3;
+    right: 100px; 
+    top: 3px;
     bottom: 0;
     border: solid 2px #a9a9a9;
     border-top-color:rgb(255, 255, 255);
