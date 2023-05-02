@@ -2,6 +2,69 @@ body {
     background-color: rgba(220, 220, 220, 0.844);
 }
 
+h1, h2, h3 {
+  font-family: 'Fascinate Inline';
+  color: aliceblue;
+}
+
+.container {
+  position: absolute;
+  height: 300px;
+  width: 1000px;
+  bottom: 10px;
+  margin-left: 200px;
+  display: flex;
+}
+
+.container2 {
+  position: absolute;
+  height: 300px;
+  width: 1000px;
+  top: 10px;
+  margin-left: 200px;
+  display: flex;
+}
+
+.albumcover {
+  display: flex;
+  height: 280px;
+  width: 2000px;
+  background-color: rgb(32, 32, 32);
+  border-radius: 10px;
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+  border-radius: 50%;
+}
+
+.albumcover:hover {
+  transform: translateY(-50px);
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+  z-index: 9;
+}
+
+.albumtitle {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.diskmiddle {
+  width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: rgb(252, 36, 36);
+    position: relative;
+     margin: auto; 
+     display: flex;
+     align-items: center;
+
+}
+
 .table {
     width: 700px;
     height: 400px;
