@@ -1,57 +1,84 @@
+.container {
+    display:flex;
+}
+nav {
+    flex:1;
+    margin-top: -50px;
+}
+main {
+    flex:3;
+    background-color: rgb(196, 222, 222);
+}
+ul{
+    list-style: none;
+}
+li {
+    display:block;
+}
+p {
+    font-family: 'Roboto Mono', monospace;
+
+}
+button {
+    width: 150px;
+    padding: 10px;
+    margin: 10px 0;
+    border:5px rgb(0, 0, 0);
+    border-style:groove;
+    border-radius: 10px;
+    background-color: transparent;
+    color:rgb(0, 0, 0);
+    font-family: 'Fascinate Inline';
+    font-size: 1.3em;
+}
+
+#images{
+    display:flex;
+    margin-top: 150px;
+    margin-left: 170px;
+}
+
+img{
+    display: block;
+    width:40%;
+    z-index: 3;
+}
+
 body {
     background-color: rgba(220, 220, 220, 0.844);
 }
 
-h1, h2, h3 {
-  font-family: 'Fascinate Inline';
-  color: aliceblue;
+h1 {
+    font-size:60px;
 }
 
-.container {
+h1, h2, h3 {
+  font-family: 'Fascinate Inline';
+  color: rgb(0, 0, 0);
+  display: block;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-top: 100px;
+}
+
+/* .container {
   position: absolute;
   height: 300px;
   width: 1000px;
   bottom: 10px;
   margin-left: 200px;
   display: flex;
-}
+} */
 
-.container2 {
+/* .container2 {
   position: absolute;
   height: 300px;
   width: 1000px;
   top: 10px;
   margin-left: 200px;
   display: flex;
-}
-
-.albumcover {
-  display: flex;
-  height: 280px;
-  width: 2000px;
-  background-color: rgb(32, 32, 32);
-  border-radius: 10px;
-  transition: 0.4s ease-out;
-  position: relative;
-  left: 0px;
-  border-radius: 50%;
-}
-
-.albumcover:hover {
-  transform: translateY(-50px);
-  transition: 0.4s ease-out;
-  position: relative;
-  left: 50px;
-  transition: 0.4s ease-out;
-  z-index: 9;
-}
-
-.albumtitle {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
+} */
 
 .diskmiddle {
   width: 130px;
@@ -66,28 +93,28 @@ h1, h2, h3 {
 }
 
 .table {
-    width: 700px;
+    width: 800px;
     height: 400px;
     background-color: rgb(3, 80, 168);
     border-radius: 20px;
     position: absolute;
-    left: 0; 
+    left: 80px; 
     right: 0; 
-    top: 0;
+    top:0;
     bottom: 0;
     margin: auto;
     z-index: 2;
   }
 
   .tableShadow {
-    width: 700px;
+    width: 800px;
     height: 400px;
-    background-color: rgb(52, 46, 46);
+    background-color:rgba(52, 46, 46, 0.485);
     border-radius: 20px;
     position: absolute;
-    left: 20px; 
+    left: 105px; 
     right: 0; 
-    top: 0;
+    top:0;
     bottom: 20px;
     margin: auto;
     z-index: 1;
@@ -97,7 +124,7 @@ h1, h2, h3 {
     width: 430px;
     height: 430px;
     border-radius: 50%;
-    background-color: rgb(52, 46, 46);
+    background-color: rgba(52, 46, 46, 0.485);
     position: absolute;
     /* margin: auto; */
     margin-top: auto;
@@ -105,19 +132,19 @@ h1, h2, h3 {
     margin-right: auto;
     left: 400px; 
     right: 0; 
-    top: 0;
+    top:0;
     bottom: 20px;
     z-index: 1;
   }
 
   .screen {
-    width: 200px;
+    width: 300px;
     height: 300px;
     background-color: rgb(21, 21, 21);
     border-radius: 20px;
     position: absolute;
     left: 0; 
-    right: 400px; 
+    right: 300px; 
     top: 0;
     bottom: 0;
     margin-top: auto;
@@ -131,12 +158,13 @@ h1, h2, h3 {
     height: 300px;
     position: absolute;
     left: 0; 
-    right: -20px; 
-    top: 0;
+    right: 0px; 
+    top:0;
     bottom: 0;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
+    margin-right: auto;
     z-index: 3;
     color: aliceblue;
   }
@@ -162,7 +190,7 @@ h1, h2, h3 {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-color: rgb(174, 14, 14);
+    background-color:none;
     position: absolute;
     /* margin: auto; */
     margin-top: auto;
@@ -172,6 +200,7 @@ h1, h2, h3 {
     right: 0; 
     top: 0;
     bottom: 20px;
+    
     
   }
 
@@ -192,17 +221,75 @@ h1, h2, h3 {
     border: solid 5px #a9a9a9;
     border-top-color:rgb(255, 255, 255);
     border-radius: 50%;
-    
+    z-index: 10;
   }
 
   .border {
-
     transform: rotate(135deg);  
     animation: spin 1.3s steps(2) .2s infinite;
     -webkit-animation: spin 1.3s linear infinite;
+    z-index: 10;
   }
 
-  
+  .diskCenterP2 {
+    width: 430px;
+    height: 430px;
+    border-radius: 50%;
+    background-color: rgba(64, 64, 64, 0);
+    position: absolute;
+    /* margin: auto; */
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    left: 0; 
+    right: 100; 
+    top: 3;
+    bottom: 0;
+    border: solid 2px #a9a9a9;
+    border-top-color:rgb(255, 255, 255);
+    z-index: 10;
+  }
+
+  .diskCenterP3 {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    background-color: rgba(64, 64, 64, 0);
+    position: absolute;
+    /* margin: auto; */
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto;
+    left: 0; 
+    right: 0; 
+    top: 0;
+    bottom: 0;
+    border: solid 2px #303030;
+    border-top-color:rgb(127, 127, 127);
+    z-index: 10;
+  }
+
+  .diskCenterP4 {
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    background-color: rgba(64, 64, 64, 0);
+    position: absolute;
+    /* margin: auto; */
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto;
+    left: 0; 
+    right: 0; 
+    top: 0;
+    bottom: 0;
+    border: solid 2px #494949;
+    border-top-color:rgb(205, 205, 205);
+    z-index: 10;
+  }
+
 
  @keyframes spin {
     0% {

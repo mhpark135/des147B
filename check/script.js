@@ -1,4 +1,4 @@
-let globalData;
+
 async function getData(){
     const myMoods = await fetch ('data/mood.json');
     const data = await myMoods.json();
@@ -11,10 +11,10 @@ async function getData(){
 }
 
 function outputHTML(data){
-    const feeling = ['really bad', 'grumpy', 'meh', 'ok', 'good!', 'wicked awesome!'];
-    let html = '<p>';
-    html += `At ${data.point2.time} I was feeling ${feeling[data.point2.mood]} because of ${data.point2.reason}`;
-    html += '<p>';
+    const feeling = ['God Bless the Child', 'That’s Life',  'One Step Ahead', '(I Love You) For Sentimental Reasons', 'Put Your Head On My Shoulder', 'Take Five','But Not For Me - Vocal Version','Fly Me To The Moon (In Other Words)'];
+    let html = document.querySelector(".artist");
+    html += `At ${data.point2.time} I was listening to ${feeling[data.point2.mood]} because of ${data.point2.reason}`;
+    html += document.querySelector('.artist');
     return html;
 }
 
@@ -44,10 +44,10 @@ function createEvents(){
 
 function updateInterface(value, jsonData){
     console.log(value);
-    const feeling = ['really bad', 'grumpy', 'meh', 'ok', 'good', 'wicked awesome!'];
+    const feeling = ['God Bless the Child', 'That’s Life',  'One Step Ahead', '(I Love You) For Sentimental Reasons', 'Put Your Head On My Shoulder', 'Take Five','But Not For Me - Vocal Version','Fly Me To The Moon (In Other Words)'];
     let text = '<p>';
     let imgs = '';
-    text += `At ${jsonData[value].time} I was feeling ${feeling[jsonData[value].mood]} because of ${jsonData[value].reason}`;
+    text += `At ${jsonData[value].time} I was listening to ${feeling[jsonData[value].mood]}, sung by ${jsonData[value].reason}`;
     text += '</p>';
     if (jsonData[value].hasOwnProperty('images')){
         for (let i=0; i<jsonData[value].images.length; i++ ){

@@ -1,0 +1,50 @@
+{
+    "Album 1" : {
+        "time":"11:18",
+        "mood" : 0,
+        "reason" : "Sonny Rollins",
+        "images" : ["images/circ1.png"]
+    },
+    "Album 2" : {
+        "time":"11:33",
+        "mood" : 1,
+        "reason" : "Frank Sinatra",
+        "images" :["images/circ2.png"]
+    },
+    "Album 3" : {
+        "time":"11:50",
+        "mood" : 2,
+        "reason" : "Cecile McLorin Salvant",
+        "images" :["images/circ3.png"]
+    },
+    "Album 4" : {
+        "time":"12:01",
+        "mood" : 3,
+        "reason" : "Nat King Cole",
+        "images" : ["images/circ4.png"]
+    },
+    "Album 5" : {
+        "time":"12:04",
+        "mood" : 4,
+        "reason" : "Paul Anka",
+        "images" : ["images/circ5.png"]
+    },
+    "Album 6" : {
+        "time":"12:07",
+        "mood" : 5,
+        "reason" : "Dave Brubeck",
+        "images" :["images/circ6.png"]
+    },
+    "Album 7" : {
+        "time":"12:08",
+        "mood" : 6,
+        "reason" : "Chet Baker",
+        "images" : ["images/circ7.png"]
+    },
+    "Album 8" : {
+        "time":"12:11",
+        "mood" : 7,
+        "reason" : "Frank Sinatra, Count Basie",
+        "images" :["images/circ8.png"]
+    }
+}
