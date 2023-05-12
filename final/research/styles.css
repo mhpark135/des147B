@@ -30,6 +30,7 @@ p {
     margin-left: 30vw;
     margin-right: 30vw;
     text-align: left;
+    line-height: 25px;
 }
 
 a {
@@ -41,6 +42,4 @@ a {
     margin-bottom: 10px;
 }
 
-.norm {
-    margin:0;
-}
+
