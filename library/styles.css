@@ -28,6 +28,7 @@ p {
 
 div {
     display: block;
+    
 }
 
 .oCont {
@@ -49,6 +50,7 @@ div {
     height: 300px;
     margin-bottom: 100px;
     margin-left: 100px;
+    position: relative;
 }
 
 .hover {
@@ -78,11 +80,18 @@ div {
   .pixelart-to-css {
     position: absolute;
     animation: x 1s infinite;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
   }
 
   .pixelart-to-css2 {
     position: absolute;
     animation: y 1s infinite;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   
   @keyframes y {
