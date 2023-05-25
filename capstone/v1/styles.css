@@ -1,0 +1,72 @@
+* {
+    font-family: "VT323";
+}
+
+body {
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+main {
+    display: flex;
+    gap: 48px;
+    justify-content: center;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    background-color: #F45154;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 12px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    box-shadow: 
+        4px 4px #e34c4e,
+        inset 4px 4px #fd7679;
+}
+
+.button:active {
+    top: 2px;
+    color: black;
+}
+
+#game {
+    width: 800px;
+    height: 500px;
+    background-color: #FFF0E1;
+}
+
+#gallery {
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#instructions {
+    background-color: gray;
+}
+
+.showing {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
