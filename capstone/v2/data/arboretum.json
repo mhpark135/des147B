@@ -1,0 +1,38 @@
+{
+    "arboretum1" : {
+        "id" : "arboretum1",
+        "name" : "double crested cormorant",
+        "image" : "cormorant1.png",
+        "description" : "description1"
+    },
+    "arboretum2" : {
+        "id" : "arboretum2",
+        "name" : "western pond turtle",
+        "image" : "turtle1.png",
+        "description" : "description2"
+    },
+    "arboretum3" : {
+        "id" : "arboretum3",
+        "name" : "monarch butterfly",
+        "image" : "monarch1.png",
+        "description" : "description3"
+    },
+    "arboretum4" : {
+        "id" : "arboretum4",
+        "name" : "feather reed grass",
+        "image" : "featherR.png",
+        "description" : "description4"
+    },
+    "arboretum5" : {
+        "id" : "arboretum5",
+        "name" : "mexican tulip poppy",
+        "image" : "mexicanT.png",
+        "description" : "description5"
+    },
+    "arboretum6" : {
+        "id" : "arboretum6",
+        "name" : "pig squeak",
+        "image" : "pigsqueak.png",
+        "description" : "description6"
+    }
+}
