@@ -108,7 +108,9 @@
     })
     
     map.loadSprite("boyDown", "images/boyDown.png")
-    map.loadSprite("boySide", "images/boyRight.png")    
+    map.loadSprite("boyUp", "images/boyUp.png")
+    map.loadSprite("boyRight", "images/boyRight.png")    
+    map.loadSprite("boyLeft", "images/boyLeft.png")    
     map.loadSprite("tempbg", "images/tempbg.png")
     map.loadSprite("temparea", "images/boyDown.png")
     
@@ -126,7 +128,7 @@
     ])
 
     let boy = map.add([
-        map.sprite("boySide"),
+        map.sprite("boyRight"),
         map.pos(500, 300),
         map.area(),
     ])
@@ -135,17 +137,18 @@
     const SPEED = 120
 
     map.onKeyDown("left", () => {
-        player.flipX = true,
+        player.use(map.sprite('boyLeft'))
         player.move(-SPEED, 0)
     })
 
     map.onKeyDown("right", () => {
-        player.flipX = false,
+        player.use(map.sprite('boyRight'))
         player.move(SPEED, 0)
     })
 
     map.onKeyDown("up", () => {
-        player.move(0, -SPEED)
+        player.move(0, -SPEED),
+        player.use(map.sprite('boyUp'))
     })
 
     map.onKeyDown("down", () => {
@@ -153,7 +156,8 @@
         //     map.sprite("boyDown"),
         //     map.area(),
         // ])
-        player.move(0, SPEED)
+        player.move(0, SPEED),
+        player.use(map.sprite('boyDown'))
     })
     
     player.onCollide("tempCollisionArea", (tempCollisionArea) => {
