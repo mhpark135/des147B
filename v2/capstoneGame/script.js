@@ -4,7 +4,9 @@ const JUMP_FORCE = 800
 const SPEED = 480
 
 // initialize context
-kaboom()
+kaboom({
+	scale: 2
+})
 
 setBackground(141, 183, 255)
 
@@ -127,7 +129,7 @@ scene("game", () => {
 			// rect(48, rand(32, 96)),
 			area(),
 			outline(4),
-			pos(width(), 750 - FLOOR_HEIGHT),
+			pos(width(), 300 - FLOOR_HEIGHT),
             // pos(width(), height(10)),
 			anchor("botleft"),
 			color(238, 143, 203),
