@@ -9,10 +9,10 @@ kaboom()
 setBackground(141, 183, 255)
 
 // load assets
-loadSprite("bean", "images/boyRight.png")
-loadSprite("tree", "images/mexicanT.png")
-loadSprite("bird", "images/cormorant1.png")
-loadSprite("butterfly", "images/monarch1.png")
+loadSprite("bean", "../images/boyRight.png")
+loadSprite("tree", "../images/mexicanT.png")
+loadSprite("bird", "../images/cormorant1.png")
+loadSprite("butterfly", "../images/monarch1.png")
 scene("game", () => {
 
 	// define gravity
