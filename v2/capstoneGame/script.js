@@ -1,7 +1,7 @@
 import kaboom from "https://unpkg.com/kaboom@3000.0.1/dist/kaboom.mjs";
 const FLOOR_HEIGHT = 48
 const JUMP_FORCE = 800
-const SPEED = 480
+const SPEED = 380
 
 // initialize context
 kaboom({
