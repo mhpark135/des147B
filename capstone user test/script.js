@@ -298,7 +298,7 @@
 arb.setBackground(141, 183, 255)
 
 // load assets
-arb.loadSprite("bean", "/images/boy.png", {
+arb.loadSprite("bean", "images/boy.png", {
 	sliceX: 6,
 	anims: {
 		"run": {
