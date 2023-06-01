@@ -75,14 +75,14 @@ main {
 }
 
 #popup.showing {
-    width: 250px;
-    height: 140px;
+    width: 300px;
+    height: 180px;
     background-color: lightcyan;
     position: relative;
     top: -280px;
     left: 280px;
     display: flex;
-    gap: 12px;
+    gap: 8px;
     flex-direction: column;
     align-items: center;
     padding: 8px;
@@ -90,6 +90,10 @@ main {
     box-shadow: 
         inset 4px 4px #f0ffff,
         4px 4px #d1f6f6;
+}
+
+#popup p, #popup h3 {
+    margin: 12px;
 }
 
 #gallery .category {
@@ -136,8 +140,10 @@ main {
 }
 
 #instructions.showing {
-    width: 80%;
-    height: 50%;
+    /* width: 80%;
+    height: 50%; */
+    width: 100%;
+    height: 100%;
     background-color: #FFF0E1;
     overflow-y: scroll;
     text-align: center;

@@ -2,6 +2,8 @@
     'use strict';
     console.log('js running');
 
+    alert("Imagine you are a fourth-grade elementary student at North Davis Elementary School. You’ve just started a new lesson in class on the history of Davis, and your teacher instructs you and your classmates to learn more about the Arboretum by playing this online desktop game. Try navigating the game and to learn more about the Arboretum.");
+
     //setting up different pages/overlays
     const galleryBtn = document.getElementById('galleryBtn');
     const instructionBtn = document.getElementById('instructionBtn');
@@ -9,8 +11,10 @@
     let description = document.querySelector('#description');
     const instructions = document.querySelector('#instructions');
     const closeBtns = document.querySelectorAll('.close');
-    const gameArea = document.querySelector('#gameArea')
-    const popup = document.querySelector('#popup')
+    const gameArea = document.querySelector('#gameArea');
+    const popup = document.querySelector('#popup');
+    let arbInstructions = false;
+
 
     galleryBtn.addEventListener('click', function() {
         gallery.className = 'showing';
@@ -25,6 +29,12 @@
         gameArea.className = 'hidden';
         popup.className = 'hidden';
 
+        if (arbInstructions == false) {
+            document.querySelector("#instructions h3").innerHTML = "Navigate to a part of the seal using the arrow keys and click “start” to play."
+        }
+        if (arbInstructions == true) {
+            document.querySelector("#instructions h3").innerHTML = "Press “spacebar” to jump. Avoid the different items and creatures coming your way!"
+        }
     })
 
     closeBtns.forEach((closeBtn) => {
@@ -109,7 +119,7 @@
         for (const item of items) {
             item.addEventListener('click', function(event) {
 
-                alert("Sorry, still under construction!");
+                alert("Sorry, still under construction! A description about what you clicked on should pop up.");
 
                 // const itemID = event.target.id;
                 // console.log(itemID)
@@ -161,20 +171,61 @@
     map.loadSprite("boyRight", "images/boyRight.png")    
     map.loadSprite("boyLeft", "images/boyLeft.png")    
     map.loadSprite("tempbg", "images/background.png")
-    map.loadSprite("temparea", "images/boyDown.png")
+    map.loadSprite("temparea", "images/featherR.png")
+    map.loadSprite("temparea2", "images/pigsqueak.png")
+    map.loadSprite("temparea3", "images/turtle1.png")
+    map.loadSprite("butterfly", "images/monarch1.png",{
+        sliceX: 2,
+        anims: {
+            "fly": {
+                from: 0,
+                to: 1,
+                speed: 8,
+                loop: true,
+            }
+        }
+    })
+
     
     // for me: create a new one for front, side etc. -> player = boyfront onKeyDown
     map.add([
-        map.sprite("tempbg")
+        map.sprite("tempbg"),
+        // tempbg.scale(2)
     ])
 
     const tempCollisionArea = map.add([
         map.sprite("temparea"),
-        map.scale(0.5),
-        map.pos(200, 300),
+        map.scale(2),
+        map.pos(490, 95),
         map.area(),
         "tempCollisionArea"
     ])
+
+    const tempCollisionArea2 = map.add([
+        map.sprite("temparea2"),
+        map.scale(2),
+        map.pos(450, 100),
+        map.area(),
+        "tempCollisionArea"
+    ])
+
+    const tempCollisionArea3 = map.add([
+        map.sprite("temparea3"),
+        map.scale(1),
+        map.pos(480, 100),
+        map.area(),
+        "tempCollisionArea"
+    ])
+
+    const tempCollisionArea4 = map.add([
+            map.sprite("butterfly"),
+            map.scale(1),
+            map.pos(500, 80),
+            map.area(),
+            "butterfly",
+    ])
+    tempCollisionArea4.play("fly");
+
 
     let boy = map.add([
         map.sprite("boyDown"),
@@ -220,7 +271,10 @@
     //connecting levels to map
     const arboretumStart = document.querySelector('#arboretum');
 
-    arboretumStart.addEventListener('click', arboretumLevel)
+    arboretumStart.addEventListener('click', function() {
+        arboretumLevel();
+        arbInstructions = true;
+    });
 
 
 
@@ -234,8 +288,6 @@
             scale: 2,
     })
     
-
-
 
     ////
 
@@ -550,13 +602,6 @@ arb.scene("lose3", (score) => {
 		arb.anchor("center"),
 	])
 
-    function clearTimeout() {
-        clearTimeout(spawnBird);
-      }
-    function clearTimeout() {
-        clearTimeout(spawnButterfly);
-      }
-
 	// display score
 	arb.add([
 		arb.text(score),
@@ -576,12 +621,6 @@ arb.go("game")
 
 }
 
-
-
-
-
     ////
-
-
 
 })();
