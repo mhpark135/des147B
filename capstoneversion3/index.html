@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&amp;display=swap" rel="stylesheet">
+
+    <!-- kaboom.js -->
+    <script src="https://unpkg.com/kaboom@3000.0.1/dist/kaboom.js"></script>
+
+    <!-- my files -->
+    <link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+
+    <title>capstone project version 3</title>
+</head>
+<body>
+    <!-- <header>
+        <h1>centennial seal sprint</h1>
+    </header> -->
+
+    <main>
+        <div id="side">
+            <h1>centennial seal sprint</h1>
+            <section id="instructions">
+                <h2>how to play</h2>
+                <p>Use the arrow keys to move to a section of the seal and click “start” to play.</p>
+            </section>
+            <div id="galleryBtn" class="button">view gallery</div>
+            <!-- <div id="instructionBtn" class="button">how to play</div> -->
+        </div>
+
+        <div id="game">
+            <canvas id="gameArea"></canvas>
+            <section id="gallery" class="hidden">
+                <div class="category">
+                    <h2>arboretum</h2>
+                    <div class="container">
+                    </div>
+                </div>
+                <div class="close button">close</div>
+            </section>
+            <section id="description" class="hidden">
+                <!-- <img src="images/cormorant1.png" alt="double crested cormorant" width="120">
+                <h3></h3>
+                <p></p> -->
+                <div class="close button">close</div>
+            </section>
+            <section id="instructionsOverlay" class="hidden">
+                <h2>Navigate to a part of the seal using the arrow keys and click “start” to play.</h2>
+                <h3>Press the arrow keys to continue.</h3>
+            </section>
+            <div id="popup" class="hidden">
+                <h2>arboretum</h2>
+                <p>explore the flora (plants) and fauna (animals) of the arboretum</p>
+                <div class="button" id="arboretum">start</div>
+            </div>
+            <section id="gameBtns" class="hidden">
+                <div id="continueBtn" class="small button">try again</div>
+                <div id="galleryBtn2" class="small button">gallery</div>
+            </section>
+        </div>
+    </main>
+    
+</body>
+</html>
