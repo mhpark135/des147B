@@ -1,0 +1,44 @@
+{
+    "arboretum1" : {
+        "id" : "arboretum1",
+        "name" : "double crested cormorant",
+        "image" : "doublecrestedcormorant.jpg",
+        "pixelimg" : "cormorant1.png",
+        "description" : "This is a waterbird that can be found in UC Davis. This is also the only species of cormorant found in the arboretum. These birds have a patch of red/orange on their face and are characterized by its double crest of white and black feathers."
+    },
+    "arboretum2" : {
+        "id" : "arboretum2",
+        "name" : "western pond turtle",
+        "image" : "westernpondturtle.jpg",
+        "pixelimg" : "turtle1.png",
+        "description" : "This turtle is California’s only native freshwater turtle. They have a dark complexion and are characterized by their yellow bottoms and dark shells. These turtles eat have a broad diet consisting, but not limited to plants and worms."
+    },
+    "arboretum3" : {
+        "id" : "arboretum3",
+        "name" : "monarch butterfly",
+        "image" : "monarchbutterfly.jpg",
+        "pixelimg" : "monarch1.png",
+        "description" : "This monarch butterfly travels…a lot! They migrate from Canada al the way to Mexico, looking for ideal weather conditions. These butterflies can be identified by their intricate red-orange wings along with white spots."
+    },
+    "arboretum4" : {
+        "id" : "arboretum4",
+        "name" : "feather reed grass",
+        "image" : "featherreedgrass.jpg",
+        "pixelimg" : "featherR.png",
+        "description" : "Being able to grow up to 5 feet, this type of grass is known for its verticality: they sway back and forth in the wind!"
+    },
+    "arboretum5" : {
+        "id" : "arboretum5",
+        "name" : "mexican tulip poppy",
+        "image" : "mexicantulippoppy.jpg",
+        "pixelimg" : "mexicanT.png",
+        "description" : "These flowers have four petals and can be recognized by their vibrant shades of yellow and orange. it has orange stamens and blue-green leaves."
+    },
+    "arboretum6" : {
+        "id" : "arboretum6",
+        "name" : "pigsqueak",
+        "image" : "pigsqueak.jpg",
+        "pixelimg" : "pigsqueak.png",
+        "description" : "These flowers are known by their unique shade of pink! They can grow around 16-18 inches tall in height. They have thick green leaves supplementing the bottom of the stem."
+    }
+}

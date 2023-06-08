@@ -1,0 +1,286 @@
+* {
+    font-family: "VT323";
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #222;
+}
+
+body {
+    margin: auto;
+    /* background-color: #222; */
+    background-color: #FFFCEF;
+}
+
+h1 {
+    font-size: 36px;
+    /* color: #FFFCEF; */
+}
+
+h2 {
+    font-size: 28px;
+    margin: 20px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+header {
+    text-align: center;
+    color: #f0ffff;
+}
+
+main {
+    display: flex;
+    gap: 48px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#game {
+    width: 1000px;
+    height: 600px;
+    /* background-color: #e3d8cd; */
+    position: relative;
+    box-shadow: 
+        -4px -4px #fcf8e6,
+        4px 4px#ddd7c1;
+}
+
+/* #gameArea {
+    border-radius: 20px;
+} */
+
+#gallery {
+    width: 100%;
+    height: 100%;
+    background-color: #ddb08f;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow-y: scroll;
+}
+
+#popup.showing {
+    width: 300px;
+    height: 240px;
+    position: relative;
+    top: -475px;
+    left: 125px;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+    text-align: center;
+    background-color: #E2A97E;
+    box-shadow: 
+        4px 4px #CC8A58,
+        inset 4px 4px #F5CDAF;
+}
+
+#popup p, #popup h3 {
+    margin: 12px;
+}
+
+#description {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(14, 10, 11, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow-y: scroll;
+}
+
+#instructionsOverlay.showing {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(14, 10, 11, 0.65);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: scroll;
+    text-align: center;
+}
+
+#instructionsOverlay.showing h2, #instructionsOverlay.showing h3 {
+    color: white;
+    width: 75%;
+    margin: 20px auto;
+}
+
+#gallery .category {
+    /* background-color: #ddb08f; */
+    display: flex;
+    flex-direction: column;
+    padding: 8px 20px 20px 20px;
+    margin: 36px;
+    text-align: center;
+}
+
+.category h2 {
+    margin: 12px 0 36px 0;
+}
+
+#gallery .container {
+    display: grid;
+    grid-template-columns: 160px 160px 160px;
+    row-gap: 24px;
+    column-gap: 140px;
+    overflow-x: scroll;
+    overflow: visible;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-width: 200px;
+    height: 200px;
+    padding: 40px;
+    cursor: pointer;
+    background-color: #E2A97E;
+    box-shadow: 
+        4px 4px #CC8A58,
+        inset 4px 4px #F5CDAF;
+}
+
+.item:hover {
+    background-color: #d29d74;
+}
+
+.item:active {
+    box-shadow: 
+    inset 4px 4px #CC8A58,
+    4px 4px #F5CDAF;
+}
+
+.item h3 {
+    margin: auto;
+}
+
+section article {
+    width: 75%;
+    height: fit-content;
+    background-color: #FFF0E1;
+    overflow-y: scroll;
+    text-align: center;
+    display: flex;
+    /* gap: 12px; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 40px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* box-shadow: 
+        4px 4px #DF793A,
+        inset 4px 4px #FFE0B1; */
+}
+
+section article p {
+    margin-top: 0px;
+}
+
+#side {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    justify-content: start;
+    width: 15%;
+    padding: 24px;
+    background-color: #AEDD75;
+    box-shadow: 
+    4px 4px #4C9953,
+    inset 4px 4px #D6F698;
+    /* border: 4px #CB8175 solid; */
+    /* text-align: center; */
+}
+
+footer {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+    color: #4C9953;
+}
+
+#sources {
+    margin: 80px;
+}
+
+#sources header {
+    text-align: center;
+    margin: 48px;
+}
+
+#sources header h2 {
+    position: absolute;
+    top: 48px;
+    left: 48px;
+}
+
+.button {
+    background-color: #f6f6f6;
+    color: #222;
+    font-size: 20px;
+    text-align: center;
+    padding: 12px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    box-shadow: 
+        4px 4px #dcdbdb,
+        inset 4px 4px #ffffff;
+}
+
+.close {
+    width: 120px;
+    position: sticky;
+    left: 50%;
+    transform: translate(-75px);
+    bottom: 40px;
+    margin-top: 20px;
+}
+
+.small {
+    width: 120px;
+}
+
+#arboretum {
+    width: 120px;
+}
+
+.button:active {
+    /* top: 2px; */
+    box-shadow: 
+        inset 4px 4px #dcdbdb,
+        4px 4px #ffffff;
+}
+
+.showing {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
